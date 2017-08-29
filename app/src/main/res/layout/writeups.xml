@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/scouting_report_label"
+        android:textColor="@color/primaryText"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/writeup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/balanced_writeup"
+        android:textColor="@color/secondaryText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/strengths_label"
+        android:textColor="@color/primaryText"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/writeupStrengths"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/secondaryText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/weakneses_label"
+        android:textColor="@color/primaryText"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/writeupWeaknesses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/secondaryText" />
+
+</LinearLayout>

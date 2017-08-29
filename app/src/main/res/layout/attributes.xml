@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/droid_speed_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/spd_label"
+        android:textColor="@color/secondaryText"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/droid_name"
+        app:layout_constraintTop_toBottomOf="@id/droid_name" />
+
+    <TextView
+        android:id="@+id/droid_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/primaryText"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/droid_speed_label"
+        app:layout_constraintTop_toBottomOf="@+id/droid_speed_label" />
+
+    <TextView
+        android:id="@+id/droid_strength_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/str_label"
+        android:textColor="@color/secondaryText"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toRightOf="@id/droid_speed"
+        app:layout_constraintStart_toEndOf="@+id/droid_speed_label"
+        app:layout_constraintTop_toTopOf="@+id/droid_speed_label" />
+
+    <TextView
+        android:id="@+id/droid_strength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/primaryText"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/droid_strength_label"
+        app:layout_constraintStart_toStartOf="@+id/droid_strength_label"
+        app:layout_constraintTop_toBottomOf="@+id/droid_strength_label" />
+
+
+    <TextView
+        android:id="@+id/droid_agility_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/agi_label"
+        android:textColor="@color/secondaryText"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toRightOf="@id/droid_strength"
+        app:layout_constraintStart_toEndOf="@+id/droid_strength_label"
+        app:layout_constraintTop_toTopOf="@+id/droid_strength_label" />
+
+    <TextView
+        android:id="@+id/droid_agility"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/primaryText"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/droid_agility_label"
+        app:layout_constraintStart_toStartOf="@+id/droid_agility_label"
+        app:layout_constraintTop_toBottomOf="@+id/droid_agility_label" />
+
+</android.support.constraint.ConstraintLayout>

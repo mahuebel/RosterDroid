@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">RosterDroid</string>
+    <string name="droid_substitute">SUBSTITUTE</string>
+    <string name="droid_starter">STARTER</string>
+    <string name="speedy_writeup">
+        When you need speed, %1$s is your droid. \nEnjoy seeing him blaze past his competitors in a blur!
+    </string>
+    <string name="strong_writeup">
+        Watch %1$s push all your opponents out of the way, he\'s a monster. \nOnce he picks a path, there\'s simply no stopping this juggernaut
+    </string>
+    <string name="balanced_writeup">
+        Sometimes you need just the right mix of speed, agility, and strength to get the job done.\n
+        If you need a balanced bot, you need %1$s.
+    </string>
+
+    <string name="agile_writeup">
+        Agility is key in short area quickness and explosiveness\n\n
+        %1$s is consistently among the most agile players in his class.
+    </string>
+    <string name="name_label">Name</string>
+    <string name="ovr_label">OVR</string>
+    <string name="spd_label">SPD:</string>
+    <string name="str_label">STR:</string>
+    <string name="agi_label">AGI:</string>
+    <string name="strengths_label">Strengths:</string>
+    <string name="weakneses_label">Weakneses:</string>
+    <string name="scouting_report_label">Scouting Report</string>
+
+    <string name="strengths">His biggest asset is his %1$s</string>
+    <string name="weaknesses">He needs to work the most on his %1$s</string>
+    <string name="sort_by_ovr">Sort by OVR</string>
+    <string name="sort_by_spd">Sort by SPD</string>
+    <string name="sort_by_str">Sort by STR</string>
+    <string name="sort_by_agi">Sort by AGI</string>
+</resources>
