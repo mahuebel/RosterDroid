@@ -1,9 +1,11 @@
 package com.huebelancer.rosterdroid.ModelLayer
 
 import com.huebelancer.rosterdroid.Helpers.Constants
+import com.huebelancer.rosterdroid.Helpers.Helpers
 import com.huebelancer.rosterdroid.Helpers.Helpers.Companion.allocatedCapRoom
 import com.huebelancer.rosterdroid.ModelLayer.Models.Droid
 import java.util.*
+import kotlin.collections.LinkedHashMap
 
 class ModelLayer {
 
@@ -21,11 +23,13 @@ class ModelLayer {
         val rand = Random()
 
         val droids = mutableListOf<Droid>()
+        val starter_sub_pointValues: LinkedHashMap<String, Int> = Helpers.getPointValues()
 
-        for (i in 0..14) {
-            //figure out how much cap room I want to take
-            val capRoom = allocatedCapRoom(remainingCap(droids), 15 - i)
-            val isStarter = i < 10
+        for (i in 1..15) {
+            val isStarter = i > Constants.SUB_COUNT
+
+            //figure out how much cap room this bot can consume
+            val capRoom = allocatedCapRoom(i, remainingCap(droids), starter_sub_pointValues)
 
             //allocate given cap points to attributes
             val max: Int = capRoom / 2
@@ -37,7 +41,7 @@ class ModelLayer {
 
 
             //generate a name
-            val name = Constants.DROID_NAMES[i] + numericSequence(rand)//simple 4 digit random number
+            val name = Constants.DROID_NAMES[i - 1] + numericSequence(rand)//simple 4 digit random number
 
 
             droids.add(
@@ -46,17 +50,15 @@ class ModelLayer {
         }
 
         droids.sortBy { droid ->
-            droid.totalAttributes()
+            droid.totalAttributes() * -1
         }
-
-        droids.reverse()
 
         //Interface back to fragment
         callback.onDroidsLoaded(droids, false)
     }
 
 
-    fun remainingCap(droids: MutableList<Droid>): Int {
+    private fun remainingCap(droids: MutableList<Droid>): Int {
         var capConsumed = 0
 
         droids.forEach { droid ->
@@ -67,7 +69,7 @@ class ModelLayer {
     }
 
 
-    fun numericSequence(rand: Random): Int {
+    private fun numericSequence(rand: Random): Int {
         return rand.nextInt(9000) + 1000
     }
 

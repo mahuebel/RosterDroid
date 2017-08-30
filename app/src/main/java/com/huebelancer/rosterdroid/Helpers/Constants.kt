@@ -4,7 +4,14 @@ package com.huebelancer.rosterdroid.Helpers
 class Constants {
 
     companion object {
-        val SALARY_CAP = 175
+        val SALARY_CAP    = 175
+        val STARTER_COUNT = 10
+        val SUB_COUNT     = 5
+
+        val STARTER_KEY = "starter"
+        val SUB_KEY     = "sub"
+
+
         val ATTR_STRENGTH = "strength"
         val ATTR_AGILITY  = "agility"
         val ATTR_SPEED    = "speed"
