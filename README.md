@@ -1,9 +1,10 @@
 ![RosterDroid](preview.jpg)
 
-#RosterDroid
+# RosterDroid
 An Android API 19+ take on the Roster Bot test project
 
-##Requirements
+## Requirements
+
 - Android API 19+
 - Android Studio 3.0 Beta 2+
 - Kotlin 1.1.3-2+
